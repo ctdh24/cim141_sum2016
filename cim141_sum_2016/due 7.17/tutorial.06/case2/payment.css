@@ -1,0 +1,105 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 6
+   Case Problem 2
+
+   The Spice Bowl Payment Form Style Sheet
+   Author: Calvin Huynh
+   Date:   7/17/2016
+
+   Filename:         payment.css
+   Supporting Files: go.png, stop.png
+
+*/
+fieldset{
+   	border: none;
+   	margin: 5px;
+}
+
+legend{
+  	background-color: rgb(239, 198, 145);
+   	color: black;
+   	margin: 10px 0px;
+   	text-indent: 20px;
+   	width: 100%;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+label{
+   	display: block;
+   	clear: left;
+   	float: left;
+   	font-size: 0.8em;
+   	text-align: right;
+   	margin: 2px 5px;
+   	width: 25%;
+}
+
+input{
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	width: 60%;
+	margin: 2px 0px;
+}
+
+select{
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	margin: 2px;
+}
+
+textarea{
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	height: 75px;
+	width: 60%;
+}
+
+fieldset.optionGroup{
+ 	margin-left: 25%;
+}
+
+fieldset.optionGroup label{
+   	display: inline;
+   	float: none;
+   	width: 100px;
+}
+input[type="radio"]{
+   	display: inline;
+   	float: none;
+   	margin: 0px;
+   	width: 20px;
+}
+
+#csc{
+   	width: 50px;
+}
+
+input[type="submit"]{
+	background-color: rgb(239, 198, 145);
+	float: none;
+	width: 150px;
+   	height: 30px;
+   	margin: 10px auto;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;   	
+}
+
+input:focus, textarea:focus{
+   	background-color: rgb(255, 218, 165);
+}
+
+input:focus:invalid{
+   	background: rgb(255, 245, 215) url(stop.png) bottom right no-repeat;
+}
+
+input:focus:valid{
+   	background: rgb(215, 255, 215) url(go.png) bottom right no-repeat;
+}
+

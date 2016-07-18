@@ -1,0 +1,115 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 5
+   Case Problem 3
+
+   Dome Table Style Sheet
+   Author: Calvin Huynh
+   Date:   7/17/2016
+
+   Filename:         dtable.css
+   Supporting files: bottom.jpg, bottomleft.jpg, bottomright.jpg,
+                     left.jpg,right.jpg, tableback.jpg,
+                     top.jpg, topleft.jpg, topright.jpg
+
+*/
+
+table.domeSpecs{
+   border-collapse: collapse; 
+   float: right; 
+   font-size: 16px;
+   margin: 0px 0px 20px 20px;
+
+   background: url(tableback.png) bottom right no-repeat;
+   background-size: cover;
+}
+
+table.domeSpecs td{
+   padding: 0px 5px;
+}
+
+table.domeSpecs caption{
+   font-size: 18px; 
+   letter-spacing: 5px; 
+   text-align: center; 
+   caption-side: top;
+   margin: 0px 0px 10px 0px;
+}
+
+/*table head*/
+table.domeSpecs thead{
+   border-bottom: 2px solid gray;
+   background: url(top.jpg) repeat-x top;
+}
+
+table.domespecs thead tr{
+   height: 40px;
+}
+
+table.domeSpecs thead th{
+   padding: 0px 5px; 
+   letter-spacing: 2px;
+}
+
+table.domeSpecs thead th:first-of-type{
+   background: url(topleft.jpg) no-repeat top left;
+}
+
+table.domeSpecs thead th:last-of-type{ 
+   background: url(topright.jpg) no-repeat top right;
+}
+ /*table footer*/
+table.domeSpecs tfoot{
+   background: url(bottom.jpg) repeat-x bottom; 
+   border-top: 2px solid gray; 
+   text-align: center;
+}
+
+table.domeSpecs tfoot tr{
+   height: 40px;
+}
+
+table.domeSpecs tfoot td:first-of-type{
+   background: url(bottomleft.jpg) no-repeat top left;
+}
+
+table.domeSpecs tfoot td:last-of-type{
+   background: url(bottomright.jpg) no-repeat top right;
+}
+
+/*table body*/
+
+table.domeSpecs tbody tr{
+   height: 50px;
+   border-bottom: 1px dotted gray;
+}
+
+table.domeSpecs tbody td:first-of-type{
+   background: url(left.jpg) top left repeat-y;
+}
+
+table.domeSpecs tbody td:last-of-type{
+   background: url(right.jpg) top right repeat-y;
+   text-align: right;
+}
+
+table.domeSpecs tbody tr:nth-of-type(even){
+   background-color: rgba(152, 228, 215, 0.6);
+}
+
+table.domeSpecs tbody tr:nth-of-type(odd){
+   background-color: rgba(255, 255, 255,0.6);
+}
+
+/* Column Styles */
+table.domeSpecs col.firstColumn{
+   width: 22%;
+}
+
+table.domeSpecs col.middleColumns{
+   width: 28%;
+}
+
+table.domeSpecs col.lastColumn{
+   width: 22%;
+}
