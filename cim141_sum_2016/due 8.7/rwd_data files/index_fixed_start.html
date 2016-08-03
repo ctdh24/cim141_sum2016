@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>A la mode ice Cream</title>
+<!-- On line 7: add meta viewport here: <meta name="viewport" content="width=device-width, initial-scale=1">-->
+
+<style type="text/css">
+/* Styles for the body*/
+
+/* We are going to change the with from pixels to precentage using the formula*/
+/* Let's assume the target goal width for browser 960px*/
+
+body {
+      width: 960px;/* Change 960px to percentage:max-with:96% */ 
+	  margin:10px auto;
+	  background-color:#FFF; 
+}
+h3 {color: #339900;}
+/* Styles for the logo image*/
+img {
+	border: 1px solid #339900;	
+}
+
+/* Styles for the content*/
+#content {
+   width: 960px;  /* Change 960px to percentage: with:96% */ 
+   margin: 0px auto;
+   background-color:#FFF;
+  
+}
+
+/* Styles for the page header */
+header {
+	background-color: white;
+	height: 150px;
+}
+
+/* Styles for the horizontal navigation list */
+nav.horizontal {
+	width: 920px; /* Change 920px to percentage: with:95.8333333%  */ 
+	height: 60px;
+	background-color: white;
+}
+
+nav.horizontal li {
+	width: 210px;
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: bold;	
+	float: left;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	margin: 5px 5px;
+	text-align: center;
+}
+
+nav.horizontal li a {
+   background-color: #339900;
+   color: white;
+   display: block;
+   text-decoration: none;
+}
+
+#ingredients {
+	float: left;
+    width: 300px;
+	background: #f2ece0;
+	padding-right: 20px;
+	padding-bottom:40px;
+}
+
+#patio {
+	float: left;
+	background: #f2ece0;
+	padding-right: 20px;
+	width: 300px;
+	padding-bottom:40px;
+}
+
+#sandwiches{
+	float: left;
+	background: #f2ece0;
+	padding-right: 20px;
+	width: 300px;
+	padding-bottom:40px;
+}
+
+/* Add two media query break points here*/
+/* One at 830px */
+/* One at 480px */
+
+</style>
+</head>
+<body>
+    <header>
+	<img src="images/ala_mode_logo.png" alt="" />
+	</header>
+    <nav class="horizontal">
+        <ul>
+			<li><a href="#">Flavors</a></li>
+			<li><a href="#">Prices</a></li>
+			<li><a href="#">Photo gallery</a></li>
+			<li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+	<div id="content">
+		<div id="ingredients">
+			<img src="images/ingredients.png" alt="Ice cream ingredients"/>
+			<h3>Only the freshest ingredients</h3>
+			<p>Cupcake ipsum dolor sit amet soufflé. Dessert ice cream chocolate cake caramels marzipan cotton candy unerdwear.com muffin carrot cake. Lemon drops tart unerdwear.com donut chocolate cookie sweet muffin. Tart donut jujubes soufflé wafer apple pie bonbon tart.</p>
+		</div>
+		<div id="patio">
+			<img src="images/patio.jpg" alt="People seated on the outdoor patio eating ice cream"/>
+			<h3>Our new patio</h3>
+			<p>Cupcake ipsum dolor sit amet soufflé. Dessert ice cream chocolate cake caramels marzipan cotton candy unerdwear.com muffin carrot cake. Lemon drops tart unerdwear.com donut chocolate cookie sweet muffin. Tart donut jujubes soufflé wafer apple pie bonbon tart.</p>
+		</div>
+		<div id="sandwiches">
+			<img src="images/ice_cream_sand.jpg" alt="Vanilla ice cream sandwich"/>
+			<h3>Gourmet Ice Cream Sandwiches</h3>
+			<p>Cupcake ipsum dolor sit amet soufflé. Dessert ice cream chocolate cake caramels marzipan cotton candy unerdwear.com muffin carrot cake. Lemon drops tart unerdwear.com donut chocolate cookie sweet muffin. Tart donut jujubes soufflé wafer apple pie bonbon tart.</p>
+		</div>
+</body>
+
+</html>
