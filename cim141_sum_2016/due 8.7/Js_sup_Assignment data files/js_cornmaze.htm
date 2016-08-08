@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <title>Sunny Acres-Corn Maze:JS Drop down Menu</title>
+    <script src="dropdownmenu.js"></script>
+    <link rel="stylesheet" type="text/css" href="ddmenu_styles.css">
     <link href="sa_layout.css" rel="stylesheet" type="text/css" />
     <link href="sa_styles.css" rel="stylesheet" type="text/css" />
 
@@ -20,15 +22,38 @@
         </h1>
     </header>
    
-    <nav>   
-        <ul>
-            <li><a href="home.htm">Home</a></li>
-            <li><a href="cornmaze.htm">Autumn Fun</a></li>
-            <li><a href="haunted.htm">Scary Good</a></li>
-            <li><a href="petting.htm">Meet the Animals</a></li>
-            <li><a href="produce.htm">For your Tastebuds</a></li>
-        </ul>
-    </nav>
+    <!--JS drop down Menu starts here-->
+   <ul id="sddm">
+        <li><a href="#" 
+               onmouseover="mopen('m1')" 
+               onmouseout="mclosetime()">Home</a>
+            <div id="m1" 
+                 onmouseover="mcancelclosetime()" 
+                 onmouseout="mclosetime()">
+                <a href="js_home.htm">Our Farm</a>
+                <a href="js_produce.htm">For Your Tastebuds</a>
+                
+            </div>
+        </li>
+        <li><a href="#" 
+               onmouseover="mopen('m2')" 
+               onmouseout="mclosetime()">Fun Activities</a>
+            <div id="m2" 
+                 onmouseover="mcancelclosetime()" 
+                 onmouseout="mclosetime()">
+                <a href="js_cornmaze.htm">The Corn Maze</a>
+                <a href="js_haunted.htm">The Haunted Maze</a>
+                <a href="js_petting.htm">Meet the Animals</a>
+                
+            </div>
+        </li>
+        <li><a href="js_farminfo.htm"
+            onmouseover="mopen('m3')"
+            onmouseout="mclosetime()">Farm Info</a>
+        </li>
+    </ul>
+    <div style="clear:both"></div>
+    <!--JS drop doen menu ends-->
 
     <section>
         <header>
@@ -60,15 +85,7 @@
             any time.
         </p>
 
-        <h2>Hours</h2>
-			<ul>
-				<li>Open August 3 through November 11</li>
-				<li>Fridays: 5 pm - 9 pm</li>
-				<li>Saturdays: 11 am - 9 pm</li>
-				<li>Sundays: 11 am - 5 pm</li>
-				<li>Open Labor Day 11 am - 5 pm</li>
-				<li>School Field Trip Week: October 24 - October 28, 9 am - 3 pm</li>
-			</ul>
+        
 
          <h2>Admission</h2>
 			<ul>

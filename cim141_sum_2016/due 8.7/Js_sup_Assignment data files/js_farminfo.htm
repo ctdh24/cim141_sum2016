@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Sunny Acres-Farm Info:JS Drop down Menu</title>
+    <script src="dropdownmenu.js"></script>
+    <link rel="stylesheet" type="text/css" href="ddmenu_styles.css">
+    <link href="sa_styles.css" rel="stylesheet" type="text/css" />
+	<link href="menu_styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+   <body>
+
+      <header>
+         <h1>
+            <img src="salogo_small.png" alt="Sunny Acres" />
+         </h1>
+
+      </header>
+   
+      <!--JS drop down Menu starts here-->
+      <ul id="sddm">
+        <li><a href="#" 
+               onmouseover="mopen('m1')" 
+               onmouseout="mclosetime()">Home</a>
+            <div id="m1" 
+                 onmouseover="mcancelclosetime()" 
+                 onmouseout="mclosetime()">
+                <a href="js_home.htm">Our Farm</a>
+                <a href="js_produce.htm">For Your Tastebuds</a>
+                
+            </div>
+        </li>
+        <li><a href="#" 
+               onmouseover="mopen('m2')" 
+               onmouseout="mclosetime()">Fun Activities</a>
+            <div id="m2" 
+                 onmouseover="mcancelclosetime()" 
+                 onmouseout="mclosetime()">
+                <a href="js_cornmaze.htm">The Corn Maze</a>
+                <a href="js_haunted.htm">The Haunted Maze</a>
+                <a href="js_petting.htm">Meet the Animals</a>
+                
+            </div>
+        </li>
+        <li><a href="js_farminfo.htm"
+            onmouseover="mopen('m3')"
+            onmouseout="mclosetime()">Farm Info</a>
+        </li>
+    </ul>
+    <div style="clear:both"></div>
+    <!--JS drop doen menu ends-->
+    
+      <section>
+         
+
+        
+         <h2>Hours</h2>
+         <ul>
+            <li>Open 5 pm - 9 pm on October 14, 15, 21, 22, 28, and 29</li>
+            <li>Halloween Festival October 31 from 3 pm - 9 pm</li>
+         </ul>
+
+         <h2>Admission</h2>
+         <ul>
+            <li>12 and over: $8.50</li>
+            <li>6 - 11: $6.50</li>
+            <li>Under 6: $2.50</li>
+         </ul>
+		 <h2>Location</h2>
+		 
+         <p>Sunny Acres </br>
+         Tammy &amp; Brent Nielsen </br>
+         1977 Highway G </br>
+         Council Bluffs, IA
+		</p>
+      </section>
+      
+      
+
+   </body>
+
+</html>

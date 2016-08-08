@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <title>A la mode ice Cream</title>
 <!-- On line 7: add meta viewport here: <meta name="viewport" content="width=device-width, initial-scale=1">-->
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <style type="text/css">
 /* Styles for the body*/
 
@@ -12,7 +12,7 @@
 /* Let's assume the target goal width for browser 960px*/
 
 body {
-      width: 960px;/* Change 960px to percentage:max-with:96% */ 
+      width: 96%;/* Change 960px to percentage:max-with:96% */ 
 	  margin:10px auto;
 	  background-color:#FFF; 
 }
@@ -24,7 +24,7 @@ img {
 
 /* Styles for the content*/
 #content {
-   width: 960px;  /* Change 960px to percentage: with:96% */ 
+   width: 96%;  /* Change 960px to percentage: with:96% */ 
    margin: 0px auto;
    background-color:#FFF;
   
@@ -38,7 +38,7 @@ header {
 
 /* Styles for the horizontal navigation list */
 nav.horizontal {
-	width: 920px; /* Change 920px to percentage: with:95.8333333%  */ 
+	width: 95.8333333%; /* Change 920px to percentage: with:95.8333333%  */ 
 	height: 60px;
 	background-color: white;
 }
@@ -91,7 +91,24 @@ nav.horizontal li a {
 /* Add two media query break points here*/
 /* One at 830px */
 /* One at 480px */
+@media screen and (max-width: 830px){
+	#content{
+		float: left;
+		width: 98%;
+		margin-top: 5px;
+	}
+	nav li;
+	nav a{
+		display: block;
+	}
+}
 
+@media screen and (max-width: 480px){
+	#content{
+		float: none;
+		width: 95%;
+	}
+}
 </style>
 </head>
 <body>

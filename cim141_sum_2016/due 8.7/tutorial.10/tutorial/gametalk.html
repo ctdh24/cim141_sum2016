@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+	Name: Calvin Huynh
+	Date: 8/7/2016
+	Made using the "one-column fixed-width responsive layout"
+	from http://maxdesign.com.au/css-layouts/
+-->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Calvin Huynh's Portfolio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Description" lang="en" content="ADD SITE DESCRIPTION">
+		<meta name="author" content="ADD AUTHOR INFORMATION">
+		<meta name="robots" content="index, follow">
+
+		<!-- icons -->
+		<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+		<link rel="shortcut icon" href="images/dice.png">
+
+		<!-- Override CSS file - add your own CSS rules -->
+		<link rel="stylesheet" href="assets/css/styles.css">
+		<link rel="stylesheet" type="text/css" href="layout.css">
+
+		<script type="text/javascript">
+	        function showEM(userName, emServer) {
+	          var emLink = userName + "@" + emServer; //combine the text of the userName and emServer
+	          document.write("<a href='mailto:" + emLink + "'>");
+	          document.write(emLink);
+	          document.write("</a>");
+	        }
+      </script>
+
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<img src="images/dice.png" alt="logo">
+				<h1 class="header-heading">Calvin Huynh's Portfolio</h1>
+				<h6>Programmer, 3D Artist, QA Tester</h6>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="#">Game Design</a></li>
+					<li><a href="#">Meetup Locations</a></li>
+				</ul>
+			</nav>
+			<div class="content">
+				<div class="main">
+					<h1>Game Design Resources</h1>
+					<p>
+						One of my most passionate topics to explore is game design. A lot of us have played a game and have had some enjoyment out of them.
+					</p>
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Link</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope=row>Gamasutra</th>
+								<td>
+									<a href="http://www.gamasutra.com/">http://www.gamasutra.com/</a>
+								</td>
+								<td>A site that aggregates game industry news and job listings</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<footer>
+				Calvin Huynh | chuynh7@ivc.edu | 17919 Paseo Valle, Chino Hills, Ca, 91709 | 714-261-5253 | &copy; 2016
+			</footer>
+		</div>
+	</body>
+</html>
